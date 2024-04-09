@@ -11,7 +11,7 @@ import { useUser } from '@clerk/nextjs'
 import { StreamCall, StreamTheme } from '@stream-io/video-react-sdk';
 import React, { useState } from 'react'
 
-const meeting = ({params}:{params:{id:string}}) => {
+const Meeting = ({params}:{params:{id:string}}) => {
   const [isSetupComplete,setIsSetupComplete] = useState(false);
   // getting use from clerk
   const {user,isLoaded} = useUser();
@@ -40,4 +40,4 @@ const meeting = ({params}:{params:{id:string}}) => {
   )
 }
 
-export default meeting
+export default Meeting
