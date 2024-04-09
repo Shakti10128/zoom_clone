@@ -78,7 +78,7 @@ const MeetingTypeList = () => {
     }
 
 
-    const meetingLink = `${process.env.NEXT_PUBLIC_BASE_URL}/meeting/${callDetails?.id}`
+    const meetingLink =`${process.env.NEXT_PUBLIC_BASE_URL}/meeting/${callDetails?.id}`
 
 
   return (
